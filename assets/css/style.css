@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* margin+pading+contenido */
+}
+
+.logo {
+    height: 100px;
+}
+
+.iconsContacto {
+    max-height: 0.7rem;
+}
+
+.lsContact {
+    list-style-type: none;
+}
+
+.navPestañas {
+    justify-content: space-around
+}
+
+body {
+    background-image: url("../img/fondoBody.webp");
+}
+
+.navegador {
+    background-color: rgb(219, 203, 235);
+}
+
+#piePagina {
+    background-color: rgb(219, 203, 235);
+    height: 50px;
+    align-self: flex-end;
+    grid-area: footer;
+}
+
+.icon__footer {
+    height: 1rem;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+.parrafoFooter {
+    display: inline;
+}
+
+.navbar-toggler {
+    background-color: rgb(219, 203, 235);
+}
+
+.iconMobile {
+    height: 50px;
+}
+
+#carouselExampleIndicators,
+.imgRefugio {
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+.historiaRefugio,
+.cuadroHorario,
+.cuadroContacto,
+.direccion,
+.maps,
+.apadrinar .list_mediosContacto,
+.textoVoluntario {
+    border: 1px solid;
+    background-color: white;
+}
+
+.historiaRefugio {
+    height: 300px;
+    width: 700px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+.colorCarrousel {
+    background-color: rgb(182, 173, 182);
+    color: rgb(46, 12, 51);
+    opacity: 0.5;
+}
+
+@media only screen and (min-width:992px) {
+    .iconMobile {
+        display: none;
+    }
+
+}
