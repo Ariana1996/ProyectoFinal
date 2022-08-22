@@ -77,7 +77,8 @@ body {
 .direccion,
 .maps,
 .apadrinar .list_mediosContacto,
-.textoVoluntario {
+.textoVoluntario,
+.voluntario {
     border: 1px solid;
     background-color: white;
 }
@@ -87,6 +88,15 @@ body {
     width: 700px;
     margin: 0px auto;
     margin-bottom: 50px;
+}
+
+.voluntario{
+    height: 300px;
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -103,6 +113,14 @@ body {
 .cardsMercado .card img{
     height: 15rem;
 }
+
+.btnDonaciones,
+.collapseDonaciones{
+    display: flex;
+    justify-content: center;
+}
+
+
 @media only screen and (min-width:992px) {
     .iconMobile {
         display: none;
