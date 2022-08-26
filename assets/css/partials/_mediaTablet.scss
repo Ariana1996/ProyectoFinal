@@ -1,0 +1,12 @@
+@media only screen and (min-width:910px) and  (max-width:1239px) {
+     .cardsMercado {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #carouselExampleIndicators,
+    .imgRefugio {
+        height: 400px;
+        width: 600px;
+        margin: 0 auto;
+    }
+}

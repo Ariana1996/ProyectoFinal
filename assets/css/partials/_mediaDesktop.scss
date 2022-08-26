@@ -1,0 +1,25 @@
+@media only screen and (min-width:1240px) {
+    .cardsMercado {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .iconMobile {
+        display: none;
+    }
+
+    .ubicacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "horario contacto"
+            "calle maps";
+    }
+
+    #carouselExampleIndicators,
+    .imgRefugio {
+        height: 500px;
+        width: 700px;
+        margin: 0 auto;
+    }
+}

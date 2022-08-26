@@ -1,0 +1,23 @@
+@import "colores";
+
+nav {
+    .navbar-toggler {
+        background-color: $colorPrincipal;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    .navegador {
+        background-color: $colorPrincipal;
+
+        .navPestañas {
+            justify-content: space-around;
+
+            .iconMobile {
+                height: 50px;
+            }
+        }
+    }
+}

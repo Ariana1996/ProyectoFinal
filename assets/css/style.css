@@ -1,90 +1,82 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* margin+pading+contenido */
+nav .navbar-toggler {
+  background-color: rgb(219, 203, 235);
 }
-
 nav .logo {
   height: 100px;
 }
-
-.iconsContacto {
-  max-height: 0.7rem;
-}
-
-.lsContact {
-  list-style-type: none;
-}
-
-.navPestañas {
-  justify-content: space-around;
-}
-
-body {
-  background-image: url("../img/fondoBody.webp");
-}
-
-.navegador {
+nav .navegador {
   background-color: rgb(219, 203, 235);
 }
+nav .navegador .navPestañas {
+  justify-content: space-around;
+}
+nav .navegador .navPestañas .iconMobile {
+  height: 50px;
+}
 
+@media only screen and (min-width: 1240px) {
+  .cardsMercado {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .iconMobile {
+    display: none;
+  }
+  .ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "horario contacto" "calle maps";
+  }
+  #carouselExampleIndicators,
+.imgRefugio {
+    height: 500px;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 910px) and (max-width: 1239px) {
+  .cardsMercado {
+    grid-template-columns: 1fr 1fr;
+  }
+  #carouselExampleIndicators,
+.imgRefugio {
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 909px) {
+  #carouselExampleIndicators,
+.imgRefugio {
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+  }
+}
 #piePagina {
   background-color: rgb(219, 203, 235);
   height: 50px;
   align-self: flex-end;
   grid-area: footer;
 }
-
-.icon__footer {
+#piePagina .parrafoFooter {
+  display: inline;
+}
+#piePagina .icon__footer {
   height: 1rem;
 }
 
-.mainContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "header" "main" "footer";
-  height: 100vh;
-}
-
-.parrafoFooter {
-  display: inline;
-}
-
-.navbar-toggler {
+.colorCarrousel {
   background-color: rgb(219, 203, 235);
+  color: rgb(46, 12, 51);
+  opacity: 0.5;
 }
 
-.iconMobile {
-  height: 50px;
-}
-
-#carouselExampleIndicators,
-.imgRefugio {
-  height: 500px;
-  width: 700px;
-  margin: 0 auto;
-}
-
-.historiaRefugio,
-.cuadroContacto,
-.direccion,
-.maps,
-.apadrinar .list_mediosContacto,
-.textoVoluntario,
-.voluntario,
-.cuadroHorario {
-  border: 1px solid;
-  background-color: white;
-}
-
-.historiaRefugio {
-  height: 300px;
-  width: 700px;
-  margin: 0px auto;
-  margin-bottom: 50px;
+.btnDonaciones,
+.collapseDonaciones {
+  display: flex;
+  justify-content: center;
 }
 
 .voluntario {
@@ -96,24 +88,25 @@ body {
   align-items: center;
 }
 
-.colorCarrousel {
-  background-color: rgb(182, 173, 182);
-  color: rgb(46, 12, 51);
-  opacity: 0.5;
+.cuadroHorario {
+  grid-area: horario;
+  max-height: 300px;
+  width: 250px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.cardsMercado {
-  display: grid;
+.cuadroContacto {
+  grid-area: contacto;
+  width: 300px;
+  max-height: 200px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.cardsMercado .card img {
-  height: 15rem;
-}
-
-.btnDonaciones,
-.collapseDonaciones {
-  display: flex;
+.liTitulo {
   justify-content: center;
+  display: flex;
 }
 
 .cuadroHorario,
@@ -139,9 +132,57 @@ body {
   height: 2rem;
 }
 
-.liTitulo {
-  justify-content: center;
-  display: flex;
+.cardsMercado {
+  display: grid;
+}
+
+.cardsMercado .card img {
+  height: 15rem;
+}
+
+.historiaRefugio {
+  height: 300px;
+  width: 700px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin+pading+contenido */
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+}
+
+body {
+  background-image: url("../img/fondoBody.webp");
+}
+
+.lsContact {
+  list-style-type: none;
+}
+.lsContact .iconsContacto {
+  max-height: 0.7rem;
+}
+
+.historiaRefugio,
+.cuadroContacto,
+.direccion,
+.maps,
+.apadrinar .list_mediosContacto,
+.textoVoluntario,
+.voluntario,
+.cuadroHorario {
+  border: 1px solid;
+  background-color: white;
 }
 
 .cuadroContacto,
@@ -153,40 +194,4 @@ body {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-}
-
-.cuadroHorario {
-  grid-area: horario;
-  max-height: 300px;
-  width: 250px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cuadroContacto {
-  grid-area: contacto;
-  width: 300px;
-  max-height: 200px;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-@media only screen and (min-width: 992px) {
-  .iconMobile {
-    display: none;
-  }
-  .cardsMercado {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media only screen and (min-width: 1240px) {
-  .cardsMercado {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .ubicacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "horario contacto" "calle maps";
-  }
 }/*# sourceMappingURL=style.css.map */

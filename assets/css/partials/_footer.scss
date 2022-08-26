@@ -1,0 +1,14 @@
+#piePagina {
+    background-color: $colorPrincipal;
+    height: 50px;
+    align-self: flex-end;
+    grid-area: footer;
+
+    .parrafoFooter {
+        display: inline;
+    }
+
+    .icon__footer {
+        height: 1rem;
+    }
+}

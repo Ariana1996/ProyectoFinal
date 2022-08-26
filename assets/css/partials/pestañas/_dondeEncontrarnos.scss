@@ -1,0 +1,43 @@
+.cuadroHorario {
+    grid-area: horario;
+    max-height: 300px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cuadroContacto {
+    grid-area: contacto;
+    width: 300px;
+    max-height: 200px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.liTitulo {
+    justify-content: center;
+    display: flex;
+}
+
+.cuadroHorario,
+.cuadroContacto {
+    list-style-type: none;
+}
+
+.cuadroHorario li,
+.cuadroContacto li {
+    list-style-type: none;
+}
+
+.direccion {
+    grid-area: calle;
+    max-height: 100px;
+}
+
+.maps {
+    grid-area: maps;
+}
+
+.cuadroContacto img {
+    height: 2rem;
+}
