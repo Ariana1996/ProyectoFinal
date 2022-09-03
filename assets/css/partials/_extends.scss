@@ -1,0 +1,13 @@
+%cuadrosTextos {
+    border: 1px solid;
+    background-color: white;
+}
+
+%centarContenido{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+// reutilizable en varios lugares como partials de index, donaciones, donde encontrarnos

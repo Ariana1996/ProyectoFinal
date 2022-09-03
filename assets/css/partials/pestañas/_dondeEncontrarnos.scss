@@ -1,4 +1,5 @@
 .cuadroHorario {
+    @extend %centarContenido;
     grid-area: horario;
     max-height: 300px;
     width: 250px;
@@ -7,6 +8,7 @@
 }
 
 .cuadroContacto {
+    @extend %centarContenido;
     grid-area: contacto;
     width: 300px;
     max-height: 200px;
@@ -21,7 +23,8 @@
 
 .cuadroHorario,
 .cuadroContacto {
-    list-style-type: none;
+    @extend %cuadrosTextos;
+    list-style-type: none;   
 }
 
 .cuadroHorario li,
@@ -30,14 +33,22 @@
 }
 
 .direccion {
+    @extend %centarContenido;
+    @extend %cuadrosTextos;
     grid-area: calle;
-    max-height: 100px;
+    max-height: 100px;   
 }
 
 .maps {
+    @extend %cuadrosTextos;
+    @extend %centarContenido;
     grid-area: maps;
 }
 
 .cuadroContacto img {
     height: 2rem;
+}
+
+.list_mediosContacto {
+    @extend %cuadrosTextos;
 }
