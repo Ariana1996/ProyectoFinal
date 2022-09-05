@@ -3,6 +3,9 @@
 .cuadroContacto, .voluntario {
   border: 1px solid;
   background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .parrafoMercado, .maps, .direccion, .cuadroContacto, .cuadroHorario {
@@ -169,6 +172,8 @@ nav .navegador .navPestañas .iconMobile {
   width: 700px;
   margin: 0px auto;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .parr2, .parr3 {
