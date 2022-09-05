@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio patitas - Entregable</title>
+    <meta name="description" content="Página para mixins, maps y extens para entregable">
+    <meta name="keywords" content="REFUGIO,ANIMALES,BUENOS AIRES,ADOPCION,MASCOTAS,GATO,PERRO,GATOS,PERROS,ENTREGABLE">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <nav class="navbar navbar-expand-lg sticky-top ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegador" id="navbarNav">
+                        <img src="../assets/img/logo.png" class="logo">
+                        <ul class="navbar-nav col-md-10 navPestañas">
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="../index.html">
+                                    <img src="../assets/img/sobre nosotros.png" class="iconMobile">
+                                    Quienes somos</a></li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nuestrasPatitas.html">
+                                    <img src="../assets/img/adopciones.png" class="iconMobile">
+                                    Nuestras patitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mercadoDeLasPulgas.html">
+                                    <img src="../assets/img/mercado.png" class="iconMobile">
+                                    Mercado de las pulgas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="donaciones.html">
+                                    <img src="../assets/img/donaciones.png" class="iconMobile">
+                                    Donaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dondeEncontrarnos.html">
+                                    <img src="../assets/img/ubicacion.png" class="iconMobile">
+                                    Dónde encontrarnos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="entregable.html">
+                                    <img src="../assets/img/ubicacion.png" class="iconMobile">
+                                    Entregable</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li class="nav-item lsContact">
+                                <img src="../assets/img/contacto.png" class="iconsContacto">
+                                <span>429790xx</span>
+                            </li>
+                            <li class="nav-item lsContact">
+                                <img src="../assets/img/whats.png" class="iconsContacto">
+                                <span>011-3144xxxx</span>
+                            </li>
+                            <li class="nav-item lsContact">
+                                <img src="../assets/img/email.png" class="iconsContacto">
+                                <span>patitas@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h1>Probando extends</h1>
+                <p class="parr1">Este párrafo está centrado</p>
+                <p class="parr2">Este párrafo hereda lo del párrafo anterior + color</p>
+                <p class="parr3">Este párrafo hereda lo del párrafo anterior + color de fondo</p>
+            </section>
+            <section>
+                <h1>Probando mixins</h1>
+                <p class="mixins1">Pasando parámetro color</p>
+                <p class="mixins2">Pasando parámetro color y fondo</p>
+                <p class="mixins3">Pasando parámetro color, fondo y tamaño</p>
+            </section>
+            <section>
+                <h1>Probando maps</h1>
+                <p class="maps1">Obteniendo valores color, padding</p>
+                <p class="maps2">Obteniendo valores background y border</p>
+                <p class="maps3">Obteniendo valores tamaño y background</p>
+            </section>
+        </main>
+
+        <!-- pie de página -->
+        <footer id="piePagina">
+            <p class="parrafoFooter">Dónde encontrarnos:Perón 475, CABA.</p>
+            <!-- insertar maps -->
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png"
+                    class="icon__footer" alt="imagen facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"
+                    class="icon__footer" alt="imagen instagram"></a>
+            <p class="Copy">Copyright &copy;</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
