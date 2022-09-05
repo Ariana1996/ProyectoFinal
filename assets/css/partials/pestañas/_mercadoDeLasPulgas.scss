@@ -5,3 +5,8 @@
 .cardsMercado .card img {
     height: 15rem;
 }
+
+.parrafoMercado{
+    @extend %cuadrosTextos,%centarContenido;
+    width: 500px;
+}
