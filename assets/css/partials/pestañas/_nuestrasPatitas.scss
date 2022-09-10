@@ -3,3 +3,32 @@
     color: rgb(46, 12, 51);
     opacity: 0.5;
 }
+
+.formularioAdopcion{
+    width: 500px;
+    border: solid 0.2px rgb(184, 178, 178);
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin: 0 auto;  
+}
+
+.btnAdopcion{
+    background-color: $colorPrincipal;
+    @extend %centarContenido;
+    @extend %espaciarContenido;
+    &:hover{
+        background-color: $colorPrincipal;
+    }
+}
+
+.parrafoPatitas{
+    @extend %cuadrosTextos;
+    @extend %centarContenido;
+    @extend %espaciarContenido;
+    width: 500px;
+    height: 50px;
+}
+
+.divisor {border: 0; height: 24px; color: $colorPrincipal; text-align: center;}
+.divisor:after {content:"\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605\2600\2605"; font-size: 14px;color: #eee;}
