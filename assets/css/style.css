@@ -66,6 +66,9 @@ nav .navegador .navPestañas .iconMobile {
     width: 600px;
     margin: 0 auto;
   }
+  .iconMobile {
+    display: none;
+  }
 }
 @media only screen and (max-width: 909px) {
   #carouselExampleIndicators,
