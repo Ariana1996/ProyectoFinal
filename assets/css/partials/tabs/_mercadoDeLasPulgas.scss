@@ -10,3 +10,8 @@
     @extend %cuadrosTextos,%centarContenido;
     width: 500px;
 }
+
+.btnCarrito{
+    border: 1px solid;
+    background-color: $colorPrincipal;
+}
