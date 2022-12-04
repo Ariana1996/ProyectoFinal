@@ -1,0 +1,64 @@
+{
+    "productos":[
+       {
+          "id":1,
+          "nombre":"Cama de pasto",
+          "precio":800,
+          "urlImagen":"../assets/img/articulos/camaPasto.jpg"
+       },
+       {
+          "id":2,
+          "nombre":"Juguete con cascabel",
+          "precio":900,
+          "urlImagen":"../assets/img/articulos/juguete.jpg"
+       },
+       {
+          "id":3,
+          "nombre":"Maceta con pasto",
+          "precio":1000,
+          "urlImagen":"../assets/img/articulos/macetaPasto.jpg"
+       },
+       {
+          "id":4,
+          "nombre":"Rascador de torre",
+          "precio":1800,
+          "urlImagen":"../assets/img/articulos/rascador.webp"
+       },
+       {
+          "id":5,
+          "nombre":"Rascador de cactus",
+          "precio":1500,
+          "urlImagen":"../assets/img/articulos/rascadorCactus.png"
+       },
+       {
+          "id":6,
+          "nombre":"Cono Rascador",
+          "precio":1200,
+          "urlImagen":"../assets/img/articulos/rascadorCono.jpg"
+       },
+       {
+          "id":7,
+          "nombre":"Rascador Vertical",
+          "precio":800,
+          "urlImagen":"../assets/img/articulos/rascadorVertical.jpg"
+       },
+       {
+          "id":8,
+          "nombre":"Ratones de juguete",
+          "precio":600,
+          "urlImagen":"../assets/img/articulos/ratones.jpg"
+       },
+       {
+          "id":9,
+          "nombre":"Cama americana",
+          "precio":2000,
+          "urlImagen":"../assets/img/articulos/cama.jpg"
+       },
+       {
+          "id":10,
+          "nombre":"Cama de madera",
+          "precio":1800,
+          "urlImagen":"../assets/img/articulos/cama2.jpg"
+       }
+    ]
+ }
