@@ -91,6 +91,12 @@ nav .navegador .navPestañas .iconMobile {
   height: 1rem;
 }
 
+.formLogin {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .colorCarrousel {
   background-color: rgb(219, 203, 235);
   color: rgb(46, 12, 51);

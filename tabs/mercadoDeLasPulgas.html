@@ -30,7 +30,7 @@
                         <ul class="navbar-nav col-md-10 navPestañas">
                             <li class="nav-item">
 
-                                <a class="nav-link" href="../index.html">
+                                <a class="nav-link" href="quienesSomos.html">
                                     <img src="../assets/img/sobre nosotros.png" class="iconMobile"
                                         alt="imagen sobre nosotros">
                                     Quienes somos</a></li>
@@ -55,6 +55,14 @@
                                     <img src="../assets/img/ubicacion.png" class="iconMobile"
                                         alt="imagen donde estamos">
                                     Dónde encontrarnos</a>
+                            </li>
+                            <li class="nav-item">            
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="drdwUsuario">Invitado</button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" onclick="CerrarSesion(event)">Cerrar sesión</a></li>                                 
+                                    </ul>                           
+                                  </div>
                             </li>
                         </ul>
 
@@ -105,7 +113,7 @@
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../assets/js/mercadoDeLasPulgas.js" type="module"></script>
-
+    <script src="../assets/js/login.js"></script>
 </body>
 
 </html>
